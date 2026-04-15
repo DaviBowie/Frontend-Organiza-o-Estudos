@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+
+  html {
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: #0f172a;
+    color: #e2e8f0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  #root {
+    width: 100%;
+    min-height: 100vh;
+  }
+}
+
+@layer components {
+  .scrollbar-thin {
+    scrollbar-width: thin;
+    scrollbar-color: #334155 transparent;
+  }
+
+  .scrollbar-thin::-webkit-scrollbar {
+    width: 4px;
+  }
+
+  .scrollbar-thin::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  .scrollbar-thin::-webkit-scrollbar-thumb {
+    background-color: #334155;
+    border-radius: 2px;
+  }
+}
+
+/* Custom audio player styling */
+audio::-webkit-media-controls-panel {
+  background-color: #1e293b;
+}
+
+audio {
+  width: 100%;
+  border-radius: 8px;
+}
